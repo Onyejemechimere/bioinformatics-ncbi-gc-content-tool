@@ -1,3 +1,8 @@
+# Author: Onyejeme Chimere Philemon (Drift King)
+# Bioinformatics Developer | Nigeria 🇳🇬
+# Created: April 2025
+# Description: Tool to fetch DNA sequences from NCBI and analyze GC content
+
 from Bio import Entrez, SeqIO
 from Bio.SeqUtils import gc_fraction
 
@@ -28,4 +33,5 @@ if __name__ == "__main__":
     print("🔬 NCBI DNA Fetcher")
     accession = input("Enter NCBI accession ID (e.g., NC_000852): ")
     fetch_fasta(accession)
+
     analyze_fasta()
